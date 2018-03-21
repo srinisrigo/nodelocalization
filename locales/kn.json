@@ -1,0 +1,21 @@
+{
+	"index": {
+		"title": "ಕಂಪೈಲರ್",
+		"welcome": "ನಿಮ್ಮ ಭಾಷೆಗೆ ಸ್ವಾಗತ"
+	},
+	"users": {
+		"title": "ಕಂಪೈಲರ್",
+		"welcome": "ಬಳಕೆದಾರ: ನಿಮ್ಮ ಭಾಷೆಗೆ ಸ್ವಾಗತ",
+		"name": "ಹೆಸರು",
+		"username": "ಬಳಕೆದಾರ ಹೆಸರು",
+		"password": "ಪಾಸ್ವರ್ಡ್",
+		"reenterpassword": "ಪಾಸ್ವರ್ಡ್ಅನ್ನು ಮತ್ತೆ ಹಾಕಿ"
+	},
+	"angular": {
+		"home": "ಮುಖಪುಟ",
+		"heroes": "ಹೀರೋಸ್",
+		"hatients": "ರೋಗಿಗಳು",
+		"studies": "ಅಧ್ಯಯನಗಳು",
+		"dicoms": "DICOMS"
+	}
+}

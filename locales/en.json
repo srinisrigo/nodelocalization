@@ -1,0 +1,21 @@
+{
+	"index": {
+		"title": "Complier",
+		"welcome": "Welcome to your language site"
+	},
+	"users": {
+		"title": "Complier",
+		"welcome": "User: Welcome to your language site",
+		"name": "name",
+		"username": "user name",
+		"password": "password",		
+		"reenterpassword": "re-enter password"
+	},
+	"angular": {
+		"home": "Home",
+		"heroes": "Heroes",
+		"hatients": "Patients",
+		"studies": "Studies",
+		"dicoms": "DICOMS"
+	}
+}
