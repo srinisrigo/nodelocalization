@@ -3,6 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    block include
   body
     a(href='/i18n/hi') हिन्दी
     a(href='/i18n/bn') বাংলা
@@ -16,4 +17,5 @@ html
     a(href='/i18n/en') english 
     a(href='/i18n/ar') عربى 
     a(href='/users') user
+    a(href='/chat') chat
     block content
