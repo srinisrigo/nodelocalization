@@ -13,10 +13,7 @@ i18n.configure({
   objectNotation: '.'
 });
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-var chat = require('./routes/chat');
-var ri18n = require('./routes/i18n');
+var config = require('./configures');
 
 var app = express();
 
@@ -37,10 +34,11 @@ app.use(cookieParser());
 app.use(i18n.init);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
-app.use('/i18n', ri18n);
-app.use('/chat', chat);
+app.use('/', require('./routes'));
+app.use('/i18n', require('./routes/i18n'));
+app.use('/users', require('./routes/user'));
+if (config.socketio) app.use('/chat', require('./routes/chat'));
+if (config.setup) app.use('/setup/book', require('./routes/setup/book'));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

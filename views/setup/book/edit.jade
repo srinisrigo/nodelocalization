@@ -1,0 +1,14 @@
+extends ../../layout
+block content
+    form(action="../update/#{bookindex}",method="POST")
+        span= name
+        input(name="name",value="#{book.name}")
+        br
+        span= author
+        input(name="author",value="#{book.author}")
+        br
+        span= price
+        input(name="price",value="#{book.price}")
+        br
+        input(type="submit",name="update",value="#{update}")
+        input(type="submit",name="cancel",value="#{cancel}")

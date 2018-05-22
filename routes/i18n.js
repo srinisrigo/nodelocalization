@@ -8,11 +8,6 @@ router.get('/:locale', function (req, res, next) {
         res.cookie("lang", req.params.locale);
     }
     
-    /*res.render('index', {
-        title: res.__('index.title'),
-        welcome: res.__('index.welcome')
-    });*/
-
     res.redirect("../..");
 });
 

@@ -1,4 +1,4 @@
-extends layout
+extends ../layout
 block include
     style.
       form { background: #dcb; padding: 3px; position: fixed; bottom: 0; width: 100%; }
@@ -26,4 +26,4 @@ block content
     ul#messages
     form(action='')
       input#m(autocomplete='off')
-      button Send
+      button #{i18n.__('index.create')}

@@ -5,17 +5,20 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     block include
   body
-    a(href='/i18n/hi') हिन्दी
-    a(href='/i18n/bn') বাংলা
-    a(href='/i18n/te') తెలుగు
-    a(href='/i18n/mr') मराठी
-    a(href='/i18n/ta') தமிழ்
-    a(href='/i18n/gu') ગુજરાતી
-    a(href='/i18n/kn') ಕನ್ನಡ
-    a(href='/i18n/ml') മലയാളം
-    a(href='/i18n/pa') ਪੰਜਾਬ 
-    a(href='/i18n/en') english 
-    a(href='/i18n/ar') عربى 
-    a(href='/users') user
-    a(href='/chat') chat
+    #headerdiv(style="float:right;")
+      a(href='/users') user
+      a(href='/chat') chat
+      a(href='/setup/book') book
+      a(href='/i18n/hi') हिन्दी
+      a(href='/i18n/bn') বাংলা
+      a(href='/i18n/te') తెలుగు
+      a(href='/i18n/mr') मराठी
+      a(href='/i18n/ta') தமிழ்
+      a(href='/i18n/gu') ગુજરાતી
+      a(href='/i18n/kn') ಕನ್ನಡ
+      a(href='/i18n/ml') മലയാളം
+      a(href='/i18n/pa') ਪੰਜਾਬ 
+      a(href='/i18n/en') english 
+      a(href='/i18n/ar') عربى
+    br
     block content

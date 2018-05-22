@@ -1,7 +1,12 @@
 {
 	"index": {
 		"title": "Complier",
-		"welcome": "Welcome to your language site"
+		"welcome": "Welcome to your language site",
+		"create": "create",
+		"update": "update",
+		"delete": "delete",
+		"cancel": "cancel",
+		"edit": "edit"
 	},
 	"users": {
 		"title": "Complier",
@@ -17,5 +22,13 @@
 		"hatients": "Patients",
 		"studies": "Studies",
 		"dicoms": "DICOMS"
+	},
+	"setup": {
+		"book": {
+			"name": "name",
+			"author": "author",
+			"price": "price",
+			"nobooks": "no books available"
+		}
 	}
 }

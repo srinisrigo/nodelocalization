@@ -5,16 +5,13 @@
   user-select: none;
   margin: 0;
   padding: 0;
+  font: Helvetica, Arial, sans-serif, "Lucida Grande";
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-}
-
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {

@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
     res.locals.locale = req.getLocale();
   }
 
-  res.render('users', {
+  res.render('user/index', {
     title: res.__('users.title'),
     welcome: res.__('users.welcome'),
     name: res.__('users.name'),
