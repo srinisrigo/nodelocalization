@@ -1,14 +1,14 @@
 extends ../layout
 block content
     form(action="")
-        span= name
+        span= __('users.name')
         input
         br
-        span= username
+        span= __('users.username')
         input
         br
-        span= password
+        span= __('users.password')
         input(type="password")
         br
-        span= reenterpassword
+        span= __('users.reenterpassword')
         input(type="password")

@@ -11,39 +11,14 @@ books = [
 
 /* GET books listing. */
 router.get('/', function (req, res, next) {
-  if (req.cookies.lang) {
-    res.setLocale(req.cookies.lang);
-    res.locals.locale = req.getLocale();
-  }
-
   res.render('setup/book/index', {
-    title: res.__('index.title'),
-    welcome: res.__('index.welcome'),
-    edit: res.__('index.edit'),
-    create: res.__('index.create'),
-    name: res.__('setup.book.name'),
-    author: res.__('setup.book.author'),
-    price: res.__('setup.book.price'),
-    nobooks: res.__('setup.book.nobooks'),
     books: books
   });
 });
 
 /* GET books edit. */
 router.get('/edit/:bookindex', function (req, res, next) {
-  if (req.cookies.lang) {
-    res.setLocale(req.cookies.lang);
-    res.locals.locale = req.getLocale();
-  }
-
   res.render('setup/book/edit', {
-    title: res.__('index.title'),
-    welcome: res.__('index.welcome'),
-    name: res.__('setup.book.name'),
-    author: res.__('setup.book.author'),
-    price: res.__('setup.book.price'),
-    update: res.__('index.update'),
-    cancel: res.__('index.cancel'),
     book: books[req.params.bookindex] || { name: '', author: '', price: '0.00' },
     bookindex: req.params.bookindex
   });
@@ -51,11 +26,6 @@ router.get('/edit/:bookindex', function (req, res, next) {
 
 /* POST books update. */
 router.post('/update/:bookindex', function (req, res, next) {
-  if (req.cookies.lang) {
-    res.setLocale(req.cookies.lang);
-    res.locals.locale = req.getLocale();
-  }
-
   if (req.body.update) {
     var book = books[req.params.bookindex];
     if (book) {
