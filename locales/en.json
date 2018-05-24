@@ -1,12 +1,15 @@
 {
 	"index": {
 		"title": "Complier",
-		"welcome": "Welcome to your language site",
+		"welcome": "Welcome to your language site"
+	},
+	"buttons": {
 		"create": "create",
 		"update": "update",
 		"delete": "delete",
 		"cancel": "cancel",
-		"edit": "edit"
+		"edit": "edit",
+		"send": "send"
 	},
 	"users": {
 		"title": "Complier",
@@ -29,6 +32,11 @@
 			"author": "author",
 			"price": "price",
 			"nobooks": "no books available"
+		}
+	},
+	"message": {
+		"confirm": {
+			"delete": "are you sure want to delete"
 		}
 	}
 }

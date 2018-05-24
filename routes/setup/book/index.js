@@ -24,7 +24,7 @@ router.get('/edit/:bookindex', function (req, res, next) {
   });
 });
 
-/* POST books update. */
+/* POST books insert or update. */
 router.post('/update/:bookindex', function (req, res, next) {
   if (req.body.update) {
     var book = books[req.params.bookindex];
@@ -39,6 +39,15 @@ router.post('/update/:bookindex', function (req, res, next) {
       author: req.body.author,
       price: req.body.price
     });
+  }
+
+  res.redirect("/setup/book");
+});
+
+/* POST books insert or update. */
+router.get('/delete/:bookindex', function (req, res, next) {
+  if (books[req.params.bookindex]) {
+    books.splice(req.params.bookindex, 1);
   }
 
   res.redirect("/setup/book");

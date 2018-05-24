@@ -1,6 +1,8 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1')
     title= __('index.title')
     link(rel='stylesheet', href='/stylesheets/style.css')
     block include
@@ -10,7 +12,7 @@ html
       a(href='/users') user
       a(href='/chat') chat
       a(href='/setup/book') book
-      select(onchange="window.location.href='/i18n/'+this.value+'?pathname='+location.pathname;")
+      select(id="ddli18n",onchange="window.location.href='/i18n/'+this.value+'?pathname='+location.pathname;")
         option(value='hi') हिन्दी
         option(value='bn') বাংলা
         option(value='te') తెలుగు
@@ -22,5 +24,5 @@ html
         option(value='pa') ਪੰਜਾਬ
         option(value='en') english
         option(value='ar') عربى
-    br
-    block content
+    #contentDiv
+      block content
