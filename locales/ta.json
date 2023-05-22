@@ -16,8 +16,8 @@
 		"username": "பயனர் பெயர்",
 		"password": "கடவுச்சொல்",
 		"reenterpassword": "கடவு சொல்லை திருப்பி உள்ளிடு",
-		"title": "users.title",
-		"welcome": "users.welcome"
+		"title": "தலைப்பு",
+		"welcome": "நல்வரவு"
 	},
 	"setup": {
 		"book": {
